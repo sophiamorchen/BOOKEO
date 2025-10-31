@@ -1,11 +1,13 @@
 <?php require_once __ROOTPATH__.'\templates\header.php'; ?>
 
+<?php if ($error) { ?>
 
+<div class="alert alert-danger">
 
+<?= $error; ?>
 
-<h1>A propos</h1>
-<h2><?= $test; ?></h2>
-<h3><?= $test2; ?></h3>
+</div>
 
+<?php }?>
 
 <?php require_once __ROOTPATH__.'\templates\footer.php';?>
